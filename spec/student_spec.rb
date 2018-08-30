@@ -12,7 +12,7 @@ describe 'School' do
   end
 
   describe "#add_student" do
-    it 'is able to add a student' do
+    it 'is able to add a student to the roster' do
       @school.add_student("AC Slater", 10)
       expect(@school.roster).to eq({10 => ["AC Slater"]})
     end
